@@ -80,3 +80,5 @@ navbar:
       href: about.html
 output:
   html_document:
+    theme: united
+    highlight: textmate
