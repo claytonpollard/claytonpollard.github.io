@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+I got pretty bored during the Easter holidays and buried myself in markdown, R markdown and git... and it has resulted in this. I hope to have notes available for every dotpoint in the NSW Mathematics syllabus, and then maybe HSC Chemistry in future!
+
+If you'd like to contact me you can email me <a href="mailto:claytonpollard@det.nsw.edu.au">here</a>.

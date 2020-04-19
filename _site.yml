@@ -1,0 +1,82 @@
+name: "claytonpollard"
+output_dir: "docs"
+navbar:
+  title: "Home"
+  left:
+    - text: "Standard"
+      menu:
+        - text: "Year 11"
+          menu:
+          - text: "Algebra"
+          - text: "MS-A1 Formulae and Equations"
+            href: https://claytonpollard.github.io/stage6_11standard/ms-a1-formulae-and-equations.html
+          - text: "MS-A2 Linear Relationships"
+            href: https://claytonpollard.github.io/stage6_11standard/ms-a2-linear-relationships.html
+          - text: "Measurement"
+          - text: "MS-M1 Applications of Measurement"
+            href: https://claytonpollard.github.io/stage6_11standard/ms-m1-applications-of-measurement.html
+          - text: "MS-M2 Working with Time"
+            href: https://claytonpollard.github.io/stage6_11standard/ms-m2-working-with-time.html
+          - text: "Financial Mathematics"
+          - text: "MS-F1 Money Matterst"
+            href: https://claytonpollard.github.io/stage6_11standard/ms-f1-money-matters.html
+          - text: "Statistical Analysiis"
+          - text: "MS-S1 Data Analysis"
+            href: https://claytonpollard.github.io/stage6_11standard/ms-s1-data-analysis.html
+          - text: "MS-S2 Relative Frequency and Probability"
+            href: https://claytonpollard.github.io/stage6_11standard/ms-s2-relative-frequency-and-probability.html
+          
+        - text: "Year 12 Standard 1"
+          menu:
+          - text: "Algebra"
+          - text: "MS-A3 Types of Relationships"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-a3-types-of-relationships.html
+          - text: "Measurement"
+          - text: "MS-M3 Right-angled Triangles"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-m3-right-angled-triangles.html
+          - text: "MS-M4 Rates"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-m4-rates.html
+          - text: "MS-M5 Scale Drawings"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-m5-scale-drawings.html
+          - text: "Financial Mathematics"
+          - text: "MS-F2 Investment"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-f2-investments.html
+          - text: "MS-F3 Depreciation and Loanst"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-f3-depreciation-and-loans.html
+          - text: "Statistical Analysiis"
+          - text: "MS-S3 Further Statistical Analysis"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-s3-further-data-anlysis.html
+          - text: "Networks"
+          - text: "MS-N1 Networks and Paths"
+            href: https://claytonpollard.github.io/stage6_12standard1/ms-n1-networks-and-paths.html
+          
+        - text: "Year 12 Standard 2"
+          menu:
+          - text: "Algebra"
+          - text: "MS-A4 Types of Relationships"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-a4-types-of-relationships.html
+          - text: "Measurement"
+          - text: "MS-M6 Non-right-angled Trigonometry"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-m6-non-right-angled-trigonometry.html
+          - text: "MS-M7 Rates and Ratios"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-m7-rates-and-ratios.html
+          - text: "Financial Mathematics"
+          - text: "MS-F4 Investments and Loans"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-f4-investments-and-loans.html
+          - text: "MS-F5 Annuities"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-f5-annuities.html
+          - text: "Statistical Analysiis"
+          - text: "MS-S4 Bivariate Data Analysis"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-s4-bivariate-data-analysis.html
+          - text: "MS-S5 The Normal Distribution"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-s5-the-normal-distribution.html
+          - text: "Networks"
+          - text: "MS-N2 Network Concepts"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-n2-network-concepts.html
+          - text: "MS-N3 Critical Path Analysis"
+            href: https://claytonpollard.github.io/stage6_12standard2/ms-n3-critical-path-analysis.html
+  right:
+    - text: "About"
+      href: about.html
+output:
+  html_document:
