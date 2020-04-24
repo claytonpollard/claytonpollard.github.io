@@ -28,8 +28,17 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
+  pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: .5rem;
+  }
   pre:not([class]) {
     background-color: white;
+  }
+  pre code {
+    background-color: transparent;
   }
 </style>
 <script type="text/javascript">
@@ -66,6 +75,7 @@ h5 {
 h6 {
   font-size: 12px;
 }
+
 .table th:not([align]) {
   text-align: left;
 }
@@ -103,6 +113,7 @@ summary {
 
 
 <style type="text/css">
+/* TODO: remove this padding CSS when we drop BS3 */
 /* padding for bootstrap navbar */
 body {
   padding-top: 51px;
@@ -133,6 +144,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .dropdown-submenu {
   position: relative;
 }
@@ -183,27 +195,29 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
 });
 </script>
 
-<!-- tabsets -->
-
+<!--
+  Note that .tabset-dropdown was initially implemented using Glyphicons, which were dropped
+  in BS4. The idea behind the "equivalent" BS4 CSS derives from how carets are implemented
+  https://github.com/twbs/bootstrap/blob/099860/scss/mixins/_caret.scss#L1
+-->
 <style type="text/css">
 .tabset-dropdown > .nav-tabs {
   display: inline-table;
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
+.tabset-dropdown > .nav-tabs > li.active-dropdown-tab:before {
   content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
@@ -211,7 +225,7 @@ $(document).ready(function () {
   border-right: 1px solid #ddd;
 }
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active-dropdown-tab:before {
   content: "&#xe258;";
   border: none;
 }
@@ -224,7 +238,7 @@ $(document).ready(function () {
   border-right: 1px solid #ddd;
 }
 
-.tabset-dropdown > .nav-tabs > li.active {
+.tabset-dropdown > .nav-tabs > li.active-dropdown-tab {
   display: block;
 }
 
@@ -324,13 +338,13 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
 </div>
 
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+<div class="toc-content col-sm-12 col-md-8 col-lg-9">
 
 
 
@@ -478,7 +492,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -488,10 +502,7 @@ div.tocify {
 </div>
 
 
-<div id="share-your-own-resources" class="section level2">
-<h2>Share your own resources?</h2>
-<p>If you’d like to get your own resources added here, please <a href="mailto:clayton.pollard@det.nsw.edu.au">send me an email</a>.</p>
-</div>
+
 
 
 
@@ -522,7 +533,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
+    $(this).siblings().removeClass("active-dropdown-tab");
+    $(this).addClass("active-dropdown-tab");
   });
 });
 </script>

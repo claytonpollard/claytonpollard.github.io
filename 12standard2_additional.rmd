@@ -8,7 +8,3 @@ output:
     toc_depth: 2
 ---
 
-
-## Share your own resources?
-
-If you'd like to get your own resources added here, please <a href="mailto:clayton.pollard@det.nsw.edu.au">send me an email</a>.
