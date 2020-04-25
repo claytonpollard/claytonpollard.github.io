@@ -4,7 +4,7 @@ title: "About"
 
 My name is Clayton Pollard (BEd,BSc(Adv)). I'm a high school teacher from NSW, Australia.
 
-I got pretty bored during the 2020 Easter holidays and buried myself in markdown, R markdown and git... and it has resulted in this. I hope to have notes available for all the content in the NSW Mathematics syllabus, and then maybe HSC Chemistry in future!
+I got pretty bored during the 2020 Easter holidays and decided to teach myself markdown, R markdown and git... and it has resulted in this. I hope to have notes available for all the content in the NSW Mathematics syllabus, and then maybe HSC Chemistry in future!
 
 If you'd be happy to share your own resources, I'd be glad to add them under the 'Additional Resources' pages. You can email me <a href="mailto:clayton.pollard@det.nsw.edu.au">here</a> and we can work something out!
 
