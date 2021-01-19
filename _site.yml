@@ -1,4 +1,20 @@
 name: "claytonpollard"
+navbar:
+  title: "Home"
+  left:
+    - text: "Year 11 Standard"
+      menu:
+        - text: "MS-A1 Formulae and Equations"
+          href: https://claytonpollard.github.io/stage6_standard/ms-a1_formulae-and-equations.html
+    - text: "Year 12 Standard 2"
+      menu:
+        - text: "MS-A4 Types of Relationships"
+          menu:
+            - text: "MS-A4.2 Non-linear relationships"
+              href: https://claytonpollard.github.io/stage6_standard/ms-a4-2_non-linear-relationships.html
+  right:
+    - text: "About"
+      href: https://claytonpollard.github.io/about.html
 output_dir: "."
 output:
   html_document:
